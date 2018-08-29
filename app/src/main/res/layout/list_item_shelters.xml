@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="145dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="110dp"
+                android:layout_height="130dp"
+                android:src="@drawable/man"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#ecf408"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_toEndOf="@id/image"
+            android:layout_toRightOf="@id/image"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/lisItemTextStyle"
+                android:text="Full name" />
+
+            <TextView
+                style="@style/lisItemTextStyle"
+                android:text="Street" />
+
+            <TextView
+                style="@style/lisItemTextStyle"
+                android:text="City, Country" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/fb"
+                    style="@style/listItemButtons"
+                    android:text="FB" />
+
+                <TextView
+                    android:id="@+id/twitter"
+                    style="@style/listItemButtons"
+                    android:layout_toEndOf="@id/fb"
+                    android:layout_toRightOf="@id/fb"
+                    android:text="Twitter" />
+
+                <TextView
+                    android:id="@+id/email"
+                    style="@style/listItemButtons"
+                    android:layout_toEndOf="@id/twitter"
+                    android:layout_toRightOf="@id/twitter"
+                    android:text="Email" />
+
+                <TextView
+                    android:id="@+id/donate"
+                    style="@style/listItemButtons"
+                    android:layout_toEndOf="@id/email"
+                    android:layout_toRightOf="@id/email"
+                    android:text="Donate" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
